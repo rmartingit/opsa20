@@ -1,0 +1,381 @@
+/* Additional Mobile Optimization Styles */
+@media (max-width: 768px) {
+    /* General layout adjustments */
+    .container {
+        padding: 0 15px;
+    }
+    
+    section {
+        padding: 40px 0;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    h2 {
+        font-size: 24px;
+    }
+    
+    /* Content section layout */
+    .content-section .container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .sidebar {
+        order: 2;
+        width: 100%;
+        margin-top: 30px;
+    }
+    
+    .page-content {
+        order: 1;
+        width: 100%;
+    }
+    
+    /* Show mobile TOC, hide sidebar TOC */
+    .toc {
+        display: none;
+    }
+    
+    .toc-mobile {
+        display: block;
+        background-color: #f8f9fa;
+        padding: 15px;
+        border-radius: 8px;
+        margin-bottom: 20px;
+    }
+    
+    /* Adjust cards for mobile */
+    .cards, .document-cards, .document-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    /* Adjust contact cards */
+    .contact-cards {
+        flex-direction: column;
+    }
+    
+    .contact-card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    /* Form adjustments */
+    .form-group {
+        margin-bottom: 15px;
+    }
+    
+    input, textarea, select {
+        width: 100%;
+    }
+    
+    /* Footer adjustments */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}
+
+/* Accessibility Enhancements */
+/* Focus styles */
+a:focus, button:focus, input:focus, textarea:focus, select:focus {
+    outline: 3px solid #4a90e2;
+    outline-offset: 2px;
+}
+
+/* Skip to content link */
+.skip-to-content {
+    position: absolute;
+    left: -9999px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.skip-to-content:focus {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    padding: 10px 15px;
+    background-color: white;
+    z-index: 9999;
+    color: var(--primary-color);
+    font-weight: bold;
+    border: 2px solid var(--primary-color);
+}
+
+/* ARIA roles and states */
+[aria-expanded="true"] .accordion-header::after {
+    content: "\f077"; /* FontAwesome chevron up */
+}
+
+[aria-expanded="false"] .accordion-header::after {
+    content: "\f078"; /* FontAwesome chevron down */
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --primary-color: #0000EE;
+        --secondary-color: #0000AA;
+        --text-color: #000000;
+        --light-color: #FFFFFF;
+        --dark-color: #000000;
+        --border-color: #000000;
+    }
+    
+    a {
+        text-decoration: underline;
+    }
+    
+    .btn {
+        border: 2px solid currentColor;
+    }
+    
+    .card, .document-card, .page-content {
+        border: 2px solid var(--border-color);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        transition: none !important;
+        animation: none !important;
+    }
+    
+    .back-to-top, html {
+        scroll-behavior: auto !important;
+    }
+}
+
+/* Print styles enhancement */
+@media print {
+    .breadcrumbs, .sidebar, .actions, .toc-mobile, .contact-form-section {
+        display: none;
+    }
+    
+    a[href]:after {
+        content: " (" attr(href) ")";
+        font-size: 90%;
+    }
+    
+    a[href^="#"]:after, a[href^="javascript:"]:after {
+        content: "";
+    }
+    
+    h1, h2, h3, h4, h5, h6 {
+        page-break-after: avoid;
+        page-break-inside: avoid;
+    }
+    
+    img {
+        page-break-inside: avoid;
+        max-width: 100% !important;
+    }
+    
+    table, pre {
+        page-break-inside: avoid;
+    }
+    
+    ul, ol, dl {
+        page-break-before: avoid;
+    }
+}
+
+/* Additional content layout styles */
+.content-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.sidebar {
+    width: 25%;
+    min-width: 250px;
+}
+
+.page-content {
+    flex: 1;
+    min-width: 0;
+}
+
+/* Contact form styles */
+.contact-form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.form-group input, .form-group textarea, .form-group select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+/* Contact cards */
+.contact-cards {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.contact-card {
+    flex: 1;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 30px;
+    box-shadow: var(--box-shadow);
+}
+
+.contact-icon {
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Accordion styles */
+.accordion {
+    margin-bottom: 40px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    padding: 15px 20px;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    font-weight: 600;
+    position: relative;
+}
+
+.accordion-header::after {
+    font-family: "Font Awesome 5 Free";
+    content: "\f078";
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s ease;
+}
+
+.accordion-header.active::after {
+    transform: rotate(180deg);
+}
+
+.accordion-content {
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.accordion-content p {
+    padding: 10px 0 20px;
+}
+
+/* Document grid for specifications page */
+.document-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+/* Search results styles */
+.search-result-item {
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.search-result-item:last-child {
+    border-bottom: none;
+}
+
+.search-result-item h3 {
+    margin-bottom: 10px;
+}
+
+.search-form {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px 0 0 4px;
+    font-size: 16px;
+}
+
+.search-form .btn {
+    border-radius: 0 4px 4px 0;
+}
+
+/* Copy URL tooltip */
+.copy-tooltip {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--dark-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    z-index: 1000;
+}
+
+/* Additional accessibility classes */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Ensure proper contrast */
+.hero, .cta, footer {
+    color: white;
+}
+
+.hero a, .cta a, footer a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* Ensure proper focus for interactive elements */
+.card:focus-within, .document-card:focus-within {
+    outline: 3px solid var(--primary-color);
+}
