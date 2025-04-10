@@ -674,6 +674,20 @@ footer {
     background-color: #004494;
 }
 
+/* Layout side-by-side para páginas com sidebar e conteúdo */
+.content-section .container {
+    display: flex;
+    gap: 2rem;
+}
+
+.sidebar {
+    flex: 0 0 300px;
+}
+
+.page-content {
+    flex: 1;
+}
+
 /* Print Styles */
 @media print {
     header, footer, .cta, .back-to-top {
