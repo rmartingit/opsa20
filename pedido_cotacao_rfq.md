@@ -50,6 +50,8 @@ Atualmente, os dados relacionados com a progressão, envolvimento e abandono dos
 6. Melhor planeamento académico baseado em padrões de abandono
 7. Melhoria global no desempenho institucional relacionado com o sucesso e as taxas de conclusão dos estudantes
 
+> **Nota**: Para uma descrição mais detalhada do contexto, objetivos e resultados esperados, consulte o documento de especificações "Introdução e Visão Geral" (Anexo A).
+
 ## 3. Âmbito dos Serviços
 
 Os proponentes devem apresentar propostas para os seguintes serviços:
@@ -102,6 +104,8 @@ Os proponentes devem apresentar propostas para os seguintes serviços:
    - Configuração de monitorização
    - Documentação técnica e de utilizador
    - Suporte à transição
+
+> **Nota**: Para detalhes completos sobre os requisitos de implementação, consulte o documento de especificações "Implementação e Implantação" (Anexo E).
 
 ### 3.2 Formação Abrangente
 1. **Formação para Administradores**
@@ -247,6 +251,8 @@ A solução deve implementar uma arquitetura moderna baseada em nuvem que integr
 4. Integração com sistemas de serviços de apoio ao estudante
 5. APIs para interoperabilidade
 
+> **Nota**: Para especificações técnicas detalhadas, consulte o documento "Requisitos Técnicos e Arquitetura" (Anexo B).
+
 ## 5. Indicadores e Funcionalidades Requeridas
 
 ### 5.1 Níveis de Indicadores de Abandono
@@ -293,9 +299,44 @@ A solução deve implementar uma arquitetura moderna baseada em nuvem que integr
 4. Capacidades de drill-down
 5. Análise temporal (histórica, atual, preditiva)
 
-## 6. Entregáveis
+> **Nota**: Para especificações detalhadas de todos os indicadores, fórmulas de cálculo e visualizações recomendadas, consulte o documento "Modelo de Dados e Indicadores" (Anexo C).
 
-### 6.1 Documentação
+## 6. Requisitos de Interface do Utilizador e Visualização
+
+### 6.1 Dashboards Requeridos
+1. Dashboard Executivo para liderança institucional
+2. Dashboard de Gestão de Escola para administradores de escola
+3. Dashboard de Coordenador de Curso para coordenadores de curso
+4. Dashboard de Apoio ao Estudante para serviços de apoio
+5. Dashboards específicos por perfil (liderança, administradores, docentes, analistas)
+6. Visualizações móveis para acesso em dispositivos móveis
+
+### 6.2 Relatórios Requeridos
+1. Relatório de Análise de Abandono Institucional
+2. Relatório de Desempenho de Escola
+3. Relatório de Análise de Risco de Curso
+4. Relatório de Perfil de Risco do Estudante
+5. Capacidades de relatório personalizado
+6. Opções de exportação e partilha
+
+### 6.3 Capacidades de Filtragem e Análise
+1. Filtros por tipo de entidade (estudante, curso, UC, tempo)
+2. Capacidades de análise de correlação
+3. Capacidades de drill-down hierárquico e dimensional
+4. Exploração de detalhes
+5. Vistas de análise temporal
+
+### 6.4 Requisitos de Experiência do Utilizador
+1. Requisitos de acessibilidade
+2. Requisitos de desempenho
+3. Requisitos de usabilidade
+4. Design móvel e responsivo
+
+> **Nota**: Para especificações detalhadas de interface do utilizador e visualização, consulte o documento "Requisitos de Interface e Visualização" (Anexo D).
+
+## 7. Entregáveis
+
+### 7.1 Documentação
 1. Plano de projeto detalhado
 2. Documento de arquitetura do sistema
 3. Especificações técnicas
@@ -307,7 +348,7 @@ A solução deve implementar uma arquitetura moderna baseada em nuvem que integr
 9. Relatórios de teste
 10. Documentação de formação
 
-### 6.2 Software e Configuração
+### 7.2 Software e Configuração
 1. Ambiente de desenvolvimento configurado
 2. Ambiente de teste configurado
 3. Ambiente de produção configurado
@@ -319,7 +360,7 @@ A solução deve implementar uma arquitetura moderna baseada em nuvem que integr
 9. Configurações de alerta
 10. Scripts de manutenção
 
-### 6.3 Formação
+### 7.3 Formação
 1. Plano de formação detalhado
 2. Materiais de formação
 3. Ambiente de formação
@@ -327,25 +368,25 @@ A solução deve implementar uma arquitetura moderna baseada em nuvem que integr
 5. Avaliação de formação
 6. Certificados de formação
 
-### 6.4 Serviços de Manutenção
+### 7.4 Serviços de Manutenção
 1. Plano de manutenção
 2. Procedimentos de suporte
 3. Relatórios mensais de atividades
 4. Documentação de resolução de problemas
 5. Registo de melhorias implementadas
 
-## 7. Requisitos de Proposta
+## 8. Requisitos de Proposta
 
 Os proponentes devem incluir na sua proposta:
 
-### 7.1 Informações da Empresa
+### 8.1 Informações da Empresa
 1. Perfil da empresa
 2. Experiência em projetos similares
 3. Qualificações da equipa
 4. Referências de clientes
 5. Certificações relevantes
 
-### 7.2 Proposta Técnica
+### 8.2 Proposta Técnica
 1. Abordagem metodológica
 2. Arquitetura proposta
 3. Plano de implementação
@@ -355,7 +396,7 @@ Os proponentes devem incluir na sua proposta:
 7. Plano de formação
 8. Plano de manutenção
 
-### 7.3 Proposta Comercial
+### 8.3 Proposta Comercial
 1. Preço total do projeto
 2. Desagregação de custos por componente:
    - Desenvolvimento e implementação
@@ -366,31 +407,31 @@ Os proponentes devem incluir na sua proposta:
 4. Condições comerciais
 5. Validade da proposta
 
-### 7.4 Informações Adicionais
+### 8.4 Informações Adicionais
 1. Limitações ou exclusões
 2. Pressupostos
 3. Requisitos de colaboração do cliente
 4. Propostas de valor acrescentado
 
-## 8. Critérios de Avaliação
+## 9. Critérios de Avaliação
 
 As propostas serão avaliadas com base nos seguintes critérios:
 
-### 8.1 Critérios Técnicos (60%)
+### 9.1 Critérios Técnicos (60%)
 1. Conformidade com os requisitos (20%)
 2. Qualidade da solução proposta (15%)
 3. Metodologia e plano de implementação (10%)
 4. Experiência e qualificações da equipa (10%)
 5. Plano de formação (5%)
 
-### 8.2 Critérios Comerciais (40%)
+### 9.2 Critérios Comerciais (40%)
 1. Preço total (25%)
 2. Relação qualidade/preço (10%)
 3. Condições comerciais (5%)
 
-## 9. Condições Contratuais
+## 10. Condições Contratuais
 
-### 9.1 Termos de Pagamento
+### 10.1 Termos de Pagamento
 1. 20% na assinatura do contrato
 2. 20% na aprovação da arquitetura e design
 3. 20% na conclusão do desenvolvimento do datawarehouse
@@ -399,7 +440,7 @@ As propostas serão avaliadas com base nos seguintes critérios:
 6. 10% na aceitação final
 7. Manutenção: pagamentos mensais
 
-### 9.2 Níveis de Serviço (SLA)
+### 10.2 Níveis de Serviço (SLA)
 1. Disponibilidade do sistema: 99,5%
 2. Tempo de resposta para problemas críticos: 2 horas
 3. Tempo de resolução para problemas críticos: 8 horas
@@ -407,42 +448,42 @@ As propostas serão avaliadas com base nos seguintes critérios:
 5. Tempo de resolução para problemas não críticos: 40 horas
 6. Penalizações por não cumprimento dos SLAs
 
-### 9.3 Propriedade Intelectual
+### 10.3 Propriedade Intelectual
 1. Todos os direitos de propriedade intelectual dos entregáveis serão transferidos para o IPLeiria
 2. Confidencialidade dos dados e informações
 3. Proteção de dados pessoais
 
-### 9.4 Garantia
+### 10.4 Garantia
 1. Garantia de 12 meses após a aceitação final
 2. Cobertura da garantia
 3. Procedimentos de acionamento da garantia
 
-## 10. Instruções para Submissão
+## 11. Instruções para Submissão
 
-### 10.1 Formato de Submissão
+### 11.1 Formato de Submissão
 1. Formato eletrónico (PDF)
 2. Estrutura conforme solicitado
 3. Idioma: Português
 
-### 10.2 Prazo e Local de Submissão
+### 11.2 Prazo e Local de Submissão
 1. Data limite: [DATA]
 2. Endereço de email: [EMAIL]
 3. Assunto: "Proposta - Plataforma Power BI para Indicadores de Abandono"
 
-### 10.3 Esclarecimentos
+### 11.3 Esclarecimentos
 1. Período para pedidos de esclarecimento: [DATA INÍCIO] a [DATA FIM]
 2. Email para esclarecimentos: [EMAIL]
 3. Respostas a esclarecimentos serão partilhadas com todos os proponentes
 
-## 11. Contactos
+## 12. Contactos
 
-### 11.1 Contacto Técnico
+### 12.1 Contacto Técnico
 [NOME]
 [CARGO]
 [EMAIL]
 [TELEFONE]
 
-### 11.2 Contacto Administrativo
+### 12.2 Contacto Administrativo
 [NOME]
 [CARGO]
 [EMAIL]
@@ -451,8 +492,28 @@ As propostas serão avaliadas com base nos seguintes critérios:
 ---
 
 ## Anexos
-1. Organograma do IPLeiria
-2. Descrição dos sistemas existentes
-3. Volumes de dados estimados
-4. Detalhes técnicos adicionais
-5. Modelo de proposta
+
+### Anexo A: Introdução e Visão Geral
+Documento detalhado que apresenta o sumário executivo, contexto, propósito, âmbito do projeto e stakeholders envolvidos.
+
+### Anexo B: Requisitos Técnicos e Arquitetura
+Documento que especifica os requisitos funcionais e não-funcionais, arquitetura geral, arquitetura do datawarehouse e implementação do Power BI.
+
+### Anexo C: Modelo de Dados e Indicadores
+Documento que detalha as fontes de dados, design do modelo de dados, especificações de indicadores de abandono, categorização de estudantes, métricas de desempenho e sistemas de alerta.
+
+### Anexo D: Requisitos de Interface e Visualização
+Documento que especifica o design de dashboard, modelos de relatório, capacidades de filtragem e análise, e requisitos de experiência do utilizador.
+
+### Anexo E: Implementação e Implantação
+Documento que detalha a metodologia de desenvolvimento, requisitos de teste, processo de implantação, procedimentos de manutenção e formação.
+
+### Anexo F: Organograma do IPLeiria
+
+### Anexo G: Descrição dos Sistemas Existentes
+
+### Anexo H: Volumes de Dados Estimados
+
+### Anexo I: Detalhes Técnicos Adicionais
+
+### Anexo J: Modelo de Proposta
