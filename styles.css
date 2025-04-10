@@ -675,18 +675,19 @@ footer {
 }
 
 /* Layout side-by-side para páginas com sidebar e conteúdo */
-.content-section .container {
+.content-section .with-sidebar .container {
     display: flex;
     gap: 2rem;
 }
 
-.sidebar {
+.content-section .with-sidebar .sidebar {
     flex: 0 0 300px;
 }
 
-.page-content {
+.content-section .with-sidebar .page-content {
     flex: 1;
 }
+
 
 /* Print Styles */
 @media print {
